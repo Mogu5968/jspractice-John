@@ -1,0 +1,20 @@
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.1.0/sigma.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.1.0/plugins/sigma.parsers.gexf.min.js"></script>
+	<div id="stage"></div>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+	var url ='https://raw.githubusercontent.com/jacomyal/sigma.js/master/examples/data/moroccan-ediaspora.gexf';
+	sigma.parsers.gexf(url, {
+		container: 'stage'
+	});
+</script>
+<style type="text/css">
+#stage {
+	max-width: 400px;
+	height: 400px;
+	margin: auto;
+}
+</style>
